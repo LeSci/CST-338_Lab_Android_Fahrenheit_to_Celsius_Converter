@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ftoc_Activity">
+    <TextView
+        android:id="@+id/ftoc_label_textView"
+        android:layout_width="256dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/fahrenheit_to_celsius"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ftoc_convert_button"
+        android:layout_width="163dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ftoc_entered_value_editText" />
+
+    <TextView
+        android:id="@+id/ftoc_converted_value_textView"
+        android:layout_width="158dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ftoc_convert_button"
+        tools:text="42" />
+
+    <EditText
+        android:id="@+id/ftoc_entered_value_editText"
+        android:layout_width="256dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint_message"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ftoc_label_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
